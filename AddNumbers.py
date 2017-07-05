@@ -4,4 +4,4 @@ from AskForNumbers import whatNumbers
 
 displayValue = whatNumbers()
 
-print("The answer is",displayValue)
+print "The answer is",displayValue
