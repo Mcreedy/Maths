@@ -1,12 +1,15 @@
 #! usr/bin/env
 
-from HowManyNumbers import numofnum
-
 def whatNumbers():
-    repeatnumber = numberOfNumbers()
+
+    from HowManyNumbers import numofnum
+
+    repeatnumber = numofnum()
     numbersToAdd = []
 
     for loop in range (0,repeatnumber):
-        number = input(int("Enter Number", repeatnumber+1))
+        number = int(input("Enter number: "))
         numbersToAdd.append(number)
-    return numbersToAdd
+
+    total = sum(numbersToAdd)
+    return total

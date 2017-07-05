@@ -1,10 +1,7 @@
 #! usr/bin/env
 
-from AskForNumbers import numbersToAdd
+from AskForNumbers import whatNumbers
 
+displayValue = whatNumbers()
 
-numbers = numbersToAdd []
-
-total = sum(numbers)
-
-print("The answer is",total)
+print("The answer is",displayValue)
